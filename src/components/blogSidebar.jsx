@@ -20,7 +20,7 @@ const BlogSidebar = () => (
     </div>
 
     <div className="sidebar-box">
-      <img src="/images/pergil2.jpg" alt="Autor" className="img-fluid mb-4" />
+      <img src="/images/perfil2.jpg" alt="Autor" className="img-fluid mb-4" />
       <h3>Acerca del autor</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque...</p>
     </div>
