@@ -1,5 +1,5 @@
 import React from 'react';
-import BlogReplyFormTemp from './BlogReplyForm';
+import BlogReplyFormTemp from './blogReplyFormTemp';
 
 const BlogComment = ({ comentario, isAdmin, isReplying, onToggleReply, onSubmitReply }) => {
   const formatDate = (dateString) => 
