@@ -1,5 +1,5 @@
 import React from 'react';
-import BlogReplyForm from './BlogReplyForm';
+import BlogReplyFormTemp from './BlogReplyForm';
 
 const BlogComment = ({ comentario, isAdmin, isReplying, onToggleReply, onSubmitReply }) => {
   const formatDate = (dateString) => 
@@ -32,7 +32,7 @@ const BlogComment = ({ comentario, isAdmin, isReplying, onToggleReply, onSubmitR
         )}
 
         {isReplying && (
-          <BlogReplyForm 
+          <BlogReplyFormTemp 
             onSubmit={onSubmitReply} 
             comentarioId={comentario._id} 
             onCancel={() => onToggleReply(null)}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 
-const BlogReplyForm = ({ onSubmit, comentarioId, onCancel }) => {
+const BlogReplyFormTemp = ({ onSubmit, comentarioId, onCancel }) => {
   const { register, handleSubmit, reset } = useForm();
 
   const handleLocalSubmit = (data) => {
@@ -35,4 +35,4 @@ const BlogReplyForm = ({ onSubmit, comentarioId, onCancel }) => {
   );
 };
 
-export default BlogReplyForm;
+export default BlogReplyFormTemp;
