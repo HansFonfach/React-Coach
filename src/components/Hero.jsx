@@ -46,53 +46,39 @@ const Hero = () => {
   return (
     <div>
       {/* Sección Hero */}
-      <section className="site-blocks-cover overflow-hidden">
+      <section className="site-blocks-cover overflow-hidden pt-5">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-12 align-self-center">
-              <div className="row">
-                <div className="col-lg-11">
-                  <h1>
-                    <span ref={typedRef} className="typed-words"></span>
-                  </h1>
-                  <p>JAIME ROJAS BRICEÑO</p>
-                  <p>
-                    <a
-                      href="#contact-section"
-                      className="btn btn-warning px-5 py-3 text-white smoothscroll"
-                    >
-                      Contactarme
-                    </a>
-                  </p>
-
-                  {/* Botón para abrir el Modal */}
-                  <p>
-                    <button
-                      onClick={() => setShowModal(true)}
-                      className="btn btn-outline-warning px-4 py-2 mt-3"
-                    >
-                      Ver experiencia y formación profesional
-                    </button>
-                  </p>
-                </div>
-              </div>
+          <div className="row align-items-center">
+            <div className="col-lg-6 text-center mb-4 mb-lg-0">
+              {/* Imagen primero */}
+              <img
+                src="/images/tiojaim.jpeg"
+                alt="Jaime Rojas Briceño"
+                className="img-fluid"
+                style={{
+                  maxHeight: "400px",
+                  objectFit: "cover",
+                  borderRadius: "10px",
+                }}
+              />
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Sección Carrusel */}
-      <section>
-        <div className="container">
-          <div className="row">
-            <div className="col-12" style={{ marginTop: "-20%" }}>
-              <div className="owl-carousel">
-                <img
-                  src="/images/tiojaim.jpeg"
-                  alt="Jaime Rojas Briceño"
-                  className="img-fluid img"
-                />
-              </div>
+            <div className="col-lg-6 text-center text-lg-left">
+              {/* Luego el texto */}
+              <h1>
+                <span ref={typedRef} className="typed-words"></span>
+              </h1>
+              <p className="text-white h4 mt-3">JAIME ROJAS BRICEÑO</p>
+              <p>
+                <a
+                  href="#contact-section"
+                  className="btn btn-warning px-5 py-3 text-white smoothscroll mt-3"
+                >
+                  Contactarme
+                </a>
+               
+              </p>
+            <br>
+            </br>
             </div>
           </div>
         </div>
@@ -151,7 +137,14 @@ const Hero = () => {
                   acompañarte en tu posicionamiento y desarrollo profesional.
                 </p>
               </strong>
-
+              <p>
+                <button
+                  onClick={() => setShowModal(true)}
+                  className="btn btn-outline-primary  text-white bg-primary px-4 py-2 mt-3"
+                >
+                  Ver experiencia y formación profesional
+                </button>
+              </p>
             </div>
           </div>
         </div>
@@ -159,37 +152,88 @@ const Hero = () => {
 
       {/* Modal */}
       {showModal && (
-        <div className="modal show d-block" tabIndex="-1" role="dialog" style={{ backgroundColor: "rgba(0,0,0,0.6)" }}>
+        <div
+          className="modal show d-block"
+          tabIndex="-1"
+          role="dialog"
+          style={{ backgroundColor: "rgba(0,0,0,0.6)" }}
+        >
           <div className="modal-dialog modal-lg" role="document">
             <div className="modal-content">
               <div className="modal-header">
-                <h5 className="modal-title">Experiencia y Formación Profesional</h5>
-                <button type="button" className="close" onClick={() => setShowModal(false)}>
+                <h5 className="modal-title">
+                  Experiencia y Formación Profesional
+                </h5>
+                <button
+                  type="button"
+                  className="close"
+                  onClick={() => setShowModal(false)}
+                >
                   <span>&times;</span>
                 </button>
               </div>
               <div className="modal-body">
                 <ul className="list-unstyled">
                   <li className="mb-3 d-flex align-items-start">
-                    <span className="text-warning mr-3" style={{ fontSize: "1.5rem" }}>🏅</span>
-                    <span>Docente y Magíster en Gestión y Liderazgo Educacional, así como en Liderazgo, Dirección Estratégica y Comunicación Organizacional.</span>
+                    <span
+                      className="text-warning mr-3"
+                      style={{ fontSize: "1.5rem" }}
+                    >
+                      🏅
+                    </span>
+                    <span>
+                      Docente y Magíster en Gestión y Liderazgo Educacional, así
+                      como en Liderazgo, Dirección Estratégica y Comunicación
+                      Organizacional.
+                    </span>
                   </li>
                   <li className="mb-3 d-flex align-items-start">
-                    <span className="text-warning mr-3" style={{ fontSize: "1.5rem" }}>🏅</span>
-                    <span>Certificado como Coach Ejecutivo Profesional por la Pontificia Universidad Católica de Chile.</span>
+                    <span
+                      className="text-warning mr-3"
+                      style={{ fontSize: "1.5rem" }}
+                    >
+                      🏅
+                    </span>
+                    <span>
+                      Certificado como Coach Ejecutivo Profesional por la
+                      Pontificia Universidad Católica de Chile.
+                    </span>
                   </li>
                   <li className="mb-3 d-flex align-items-start">
-                    <span className="text-warning mr-3" style={{ fontSize: "1.5rem" }}>🏅</span>
-                    <span>18 años de experiencia en cargos directivos en el ámbito educativo, además de una amplia trayectoria como relator y en Coaching Ejecutivo.</span>
+                    <span
+                      className="text-warning mr-3"
+                      style={{ fontSize: "1.5rem" }}
+                    >
+                      🏅
+                    </span>
+                    <span>
+                      18 años de experiencia en cargos directivos en el ámbito
+                      educativo, además de una amplia trayectoria como relator y
+                      en Coaching Ejecutivo.
+                    </span>
                   </li>
                   <li className="mb-3 d-flex align-items-start">
-                    <span className="text-warning mr-3" style={{ fontSize: "1.5rem" }}>🏅</span>
-                    <span>Actualmente curso estudios de Psicología y me desempeño como Rector de una prestigiosa institución educativa, con más de 1,700 estudiantes y 198 colaboradores comprometidos con la educación.</span>
+                    <span
+                      className="text-warning mr-3"
+                      style={{ fontSize: "1.5rem" }}
+                    >
+                      🏅
+                    </span>
+                    <span>
+                      Actualmente curso estudios de Psicología y me desempeño
+                      como Rector de una prestigiosa institución educativa, con
+                      más de 1,700 estudiantes y 198 colaboradores comprometidos
+                      con la educación.
+                    </span>
                   </li>
                 </ul>
               </div>
               <div className="modal-footer">
-                <button type="button" className="btn btn-secondary" onClick={() => setShowModal(false)}>
+                <button
+                  type="button"
+                  className="btn btn-secondary"
+                  onClick={() => setShowModal(false)}
+                >
                   Cerrar
                 </button>
               </div>

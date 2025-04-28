@@ -3311,3 +3311,7 @@ figure figcaption {
     height: 80px;
   }
 }
+.small-logo-text {
+  font-size: 24px;
+  white-space: nowrap; /* evita que el texto haga salto de línea */
+}
