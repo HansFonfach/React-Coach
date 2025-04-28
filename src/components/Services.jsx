@@ -36,8 +36,9 @@ function Services() {
               </div>
               <h3 class="text-black mb-3">COACHING EJECUTIVO</h3>
               <p>
-                Proceso personalizado que acompaña a líderes organizacionales a
-                mejorar su rendimiento y habilidades.
+                Coaching Ejecutivo diseñado para potenciar tu liderazgo,
+                fortalecer tu gestión directiva y maximizar tu desarrollo
+                profesional, adaptándose a tus singulares necesidades.
               </p>
             </div>
           </div>

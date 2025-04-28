@@ -23,6 +23,7 @@ const Blog = () => {
   const { register, handleSubmit } = useForm();
 
   if (!blog) return <p>Cargando...</p>;
+  
 
   return (
     <div>

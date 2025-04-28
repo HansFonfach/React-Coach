@@ -15,6 +15,7 @@ export const useBlogData = () => {
     const fetchBlog = async () => {
       try {
         const res = await getPublicBlogRequest(id);
+        
         setBlog(res.data);
         const comentariosValidos = res.data.comentarios.filter(c => c.nombre && c.mensaje);
         setComentarios(comentariosValidos);
