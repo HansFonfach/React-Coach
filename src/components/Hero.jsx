@@ -142,7 +142,7 @@ const Hero = () => {
               <strong>
                 <p>
                   Te invito a que te contactes conmigo. Estaré feliz de
-                  acompañarte en tu posicionamiento y desarrollo profesiona.
+                  acompañarte en tu posicionamiento y desarrollo profesional.
                 </p>
               </strong>
             </div>
