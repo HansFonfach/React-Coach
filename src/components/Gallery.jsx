@@ -6,7 +6,7 @@ const Gallery = () => {
             <div className="row mb-5 justify-content-center">
               <div className="col-md-7 text-center">
                 <h2 className="text-black">
-                  Sesiones y talleres destacados / Coaching en acción
+                  Algunas experiencias
                 </h2>
                 <p>
                   Espacios de transformación y aprendizaje donde trabajamos
