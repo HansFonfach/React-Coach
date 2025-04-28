@@ -29,14 +29,16 @@ function Books() {
                   Distinciones conceptuales que han sido puestas en prácticas
                   por profesionales que han decidido asumir un cargo directivo.
                 </p>
-                <strong className="text-danger">
-                  <a
-                    href="/docs/Capitulo4.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Ver Capítulo 4
-                  </a>
+                <strong>
+                  <p className="text-danger">
+                    <a
+                      href="/docs/Capitulo4.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Ver Capítulo 4
+                    </a>
+                  </p>
                   <p>
                     <a
                       href="https://www.amazon.com/-/es/Me-nombraron-directivo-escolar-aprender/dp/B0CPLF9K6V"
@@ -69,8 +71,8 @@ function Books() {
                   trincheras idealizadas e integrando dos mundos: Teoría y
                   Práctica.
                 </p>
-                <strong className="text-danger">
-                  <p>
+                <strong>
+                  <p className="text-danger">
                     <a
                       href="/docs/Capitulo5.pdf"
                       target="_blank"
