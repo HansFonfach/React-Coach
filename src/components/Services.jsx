@@ -25,15 +25,8 @@ function Services() {
               <h3 className="text-black mb-3">CAPACITACIONES</h3>
               <p>
                 Dirigidos a grupos de profesionales que desean adquirir
-                herramientas para desempeñarse mejor...
+                herramientas para fortalecer su gestión y liderazgo.
               </p>
-              <button
-                className="btn btn-primary mt-auto"
-                data-bs-toggle="modal"
-                data-bs-target="#capacitacionesModal"
-              >
-                Leer más...
-              </button>
             </div>
           </div>
           <div class="col-md-4 d-flex">
@@ -62,8 +55,6 @@ function Services() {
           </div>
 
           {/* Repite para las otras tarjetas */}
-
-          
         </div>
       </div>
     </section>

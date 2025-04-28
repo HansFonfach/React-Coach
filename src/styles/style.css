@@ -3230,7 +3230,7 @@ figure figcaption {
 }
 /* Estilos para el login */
 .admin-panel {
-  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -3301,11 +3301,11 @@ figure figcaption {
   .admin-header {
     padding: 3rem 0;
   }
-  
+
   .admin-profile-card {
     margin: -2rem auto 2rem;
   }
-  
+
   .profile-image {
     width: 80px;
     height: 80px;
@@ -3314,4 +3314,26 @@ figure figcaption {
 .small-logo-text {
   font-size: 24px;
   white-space: nowrap; /* evita que el texto haga salto de línea */
+}
+
+@media (min-width: 768px) {
+  ul.d-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.list-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+@media (min-width: 768px) {
+  .list-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
