@@ -7,7 +7,7 @@ function NavBar() {
     <div className="row align-items-center">
       <div className="col-6 col-xl-2">
         <h1 className="mb-0 site-logo">
-          <a href="/" className="h2 mb-0">Coaching<span className="text-primary">.</span></a>
+          <a href="/" className="h2 mb-0">Coach<span className="text-primary">.</span></a>
         </h1>
       </div>
       <div className="col-12 col-md-10 d-none d-xl-block">

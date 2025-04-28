@@ -35,17 +35,23 @@ const Blog = () => {
             <div className="col-md-8 blog-content">
               <div className="row mb-5">
                 <div className="col-lg-12">
-                  <figure className="img-fluid-container">
-                    <img
-                      src={blog.imagen} 
-                      alt={blog.titulo}
-                      className="img-fluid full-width-img" // Nueva clase
-                      style={{ marginTop: "30px" }}
-                    />
-                    <figcaption className="text-center mt-2">
-                      Imagen del blog
-                    </figcaption>
-                  </figure>
+                  <div className="container-fluid">
+                    <div className="row">
+                      <div className="col-12">
+                        <img
+                          src={blog.imagen}
+                          alt={blog.titulo}
+                          className="img-fluid w-100"
+                          style={{
+                            maxHeight: "70vh" /* Limita la altura máxima */,
+                            objectFit: "contain" /* Mantiene la proporción */,
+                            margin: "30px auto",
+                            display: "block",
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -81,7 +87,7 @@ const Blog = () => {
           </div>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

@@ -1,8 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Typed from "typed.js";
 
 const Hero = () => {
   const typedRef = useRef(null);
+  const [showModal, setShowModal] = useState(false);
+
   useEffect(() => {
     const $ = window.$;
 
@@ -10,12 +12,12 @@ const Hero = () => {
       $(".owl-carousel").owlCarousel({
         loop: true,
         margin: 10,
-        nav: false, // Oculta los botones de navegación
-        dots: false, // Oculta los indicadores de paginación (si no los quieres)
-        autoplay: true, // Activa el cambio automático
-        autoplayTimeout: 3000, // Cambia cada 3 segundos
-        autoplayHoverPause: false, // No se detiene al pasar el mouse
-        items: 1, // Muestra solo una imagen a la vez
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: false,
+        items: 1,
       });
     } else {
       console.error("Owl Carousel no está definido.");
@@ -23,7 +25,6 @@ const Hero = () => {
   }, []);
 
   useEffect(() => {
-    // Inicializar Typed.js
     const typed = new Typed(typedRef.current, {
       strings: [
         " RELATOR Y COACH EJECUTIVO",
@@ -38,7 +39,7 @@ const Hero = () => {
     });
 
     return () => {
-      typed.destroy(); // Limpia el efecto cuando el componente se desmonta
+      typed.destroy();
     };
   }, []);
 
@@ -62,6 +63,16 @@ const Hero = () => {
                     >
                       Contactarme
                     </a>
+                  </p>
+
+                  {/* Botón para abrir el Modal */}
+                  <p>
+                    <button
+                      onClick={() => setShowModal(true)}
+                      className="btn btn-outline-warning px-4 py-2 mt-3"
+                    >
+                      Ver experiencia y formación profesional
+                    </button>
                   </p>
                 </div>
               </div>
@@ -140,12 +151,52 @@ const Hero = () => {
                   acompañarte en tu posicionamiento y desarrollo profesional.
                 </p>
               </strong>
+
             </div>
           </div>
         </div>
       </section>
 
-      
+      {/* Modal */}
+      {showModal && (
+        <div className="modal show d-block" tabIndex="-1" role="dialog" style={{ backgroundColor: "rgba(0,0,0,0.6)" }}>
+          <div className="modal-dialog modal-lg" role="document">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title">Experiencia y Formación Profesional</h5>
+                <button type="button" className="close" onClick={() => setShowModal(false)}>
+                  <span>&times;</span>
+                </button>
+              </div>
+              <div className="modal-body">
+                <ul className="list-unstyled">
+                  <li className="mb-3 d-flex align-items-start">
+                    <span className="text-warning mr-3" style={{ fontSize: "1.5rem" }}>🏅</span>
+                    <span>Docente y Magíster en Gestión y Liderazgo Educacional, así como en Liderazgo, Dirección Estratégica y Comunicación Organizacional.</span>
+                  </li>
+                  <li className="mb-3 d-flex align-items-start">
+                    <span className="text-warning mr-3" style={{ fontSize: "1.5rem" }}>🏅</span>
+                    <span>Certificado como Coach Ejecutivo Profesional por la Pontificia Universidad Católica de Chile.</span>
+                  </li>
+                  <li className="mb-3 d-flex align-items-start">
+                    <span className="text-warning mr-3" style={{ fontSize: "1.5rem" }}>🏅</span>
+                    <span>18 años de experiencia en cargos directivos en el ámbito educativo, además de una amplia trayectoria como relator y en Coaching Ejecutivo.</span>
+                  </li>
+                  <li className="mb-3 d-flex align-items-start">
+                    <span className="text-warning mr-3" style={{ fontSize: "1.5rem" }}>🏅</span>
+                    <span>Actualmente curso estudios de Psicología y me desempeño como Rector de una prestigiosa institución educativa, con más de 1,700 estudiantes y 198 colaboradores comprometidos con la educación.</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-secondary" onClick={() => setShowModal(false)}>
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
