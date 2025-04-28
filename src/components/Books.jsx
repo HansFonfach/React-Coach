@@ -29,11 +29,14 @@ function Books() {
                   Distinciones conceptuales que han sido puestas en prácticas
                   por profesionales que han decidido asumir un cargo directivo.
                 </p>
-                <strong>
-                  <p>
-                    <Link to="/pdf/Capitulo4.pdf">Ver Capítulo 4</Link>
-                    Leer capítulo 4
-                  </p>
+                <strong className="text-danger">
+                  <a
+                    href="/docs/Capitulo4.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Ver Capítulo 4
+                  </a>
                   <p>
                     <a
                       href="https://www.amazon.com/-/es/Me-nombraron-directivo-escolar-aprender/dp/B0CPLF9K6V"
@@ -66,18 +69,26 @@ function Books() {
                   trincheras idealizadas e integrando dos mundos: Teoría y
                   Práctica.
                 </p>
-                <p>
-                <a href="/docs/Capitulo5.pdf" target="_blank" rel="noopener noreferrer">Ver Capítulo 5</a>
-                </p>
-                <p>
-                  <a
-                    href="https://www.amazon.com/Jefatura-liderazgo-directivo-escolar-Spanish/dp/B0DSJ6LS42"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Compra aquí
-                  </a>
-                </p>
+                <strong className="text-danger">
+                  <p>
+                    <a
+                      href="/docs/Capitulo5.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Ver Capítulo 5
+                    </a>
+                  </p>
+                  <p>
+                    <a
+                      href="https://www.amazon.com/Jefatura-liderazgo-directivo-escolar-Spanish/dp/B0DSJ6LS42"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Compra aquí
+                    </a>
+                  </p>
+                </strong>
               </div>
             </div>
           </div>
