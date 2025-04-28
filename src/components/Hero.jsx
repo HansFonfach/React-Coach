@@ -81,11 +81,6 @@ const Hero = () => {
                   alt="Jaime Rojas Briceño"
                   className="img-fluid img"
                 />
-                <img
-                  src="/images/tiojaime2.jpg"
-                  alt="Jaime Rojas Briceño"
-                  className="img-fluid img"
-                />
               </div>
             </div>
           </div>

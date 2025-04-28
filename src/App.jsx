@@ -9,6 +9,7 @@ import ProtectedRoute from "./ProtectedRoute";
 import BlogList from "../pages/BlogList";
 import MenuBlog from "../pages/MenuBlog";
 import Blogs from "../pages/Blogs";
+import PdfViewer from "./components/pdfViewer";
 
 // Importación de estilos (el orden se mantiene igual)
 import "./styles/bootstrap.min.css";
@@ -20,6 +21,7 @@ import "./styles/owl.theme.default.min.css";
 import "./styles/aos.css";
 import "../public/fonts/flaticon/font/flaticon.css";
 import "./styles/style.css";
+
 
 
 // Componente wrapper para inyectar la ubicación al AuthProvider
@@ -38,6 +40,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/blogs/blog/:id" element={<Blogs />} />
+            <Route path="/view-pdf/:pdfName" element={<PdfViewer />} />
 
             {/* RUTAS PRIVADAS */}
             <Route element={<ProtectedRoute />}>
