@@ -20,6 +20,8 @@ const Blog = () => {
     fetchBlogs();
   }, []);
 
+  console.log(blogs.imagen);
+
   // Calcular blogs para la página actual
   const indexOfLastBlog = currentPage * blogsPerPage;
   const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
@@ -53,7 +55,7 @@ const Blog = () => {
                   <figure className="mr-4">
                     <a href={`/blogs/blog/${blog._id}`}>
                       <img
-                        src={blog.imagen || "images/coach_1_sm.jpg"}
+                        src={blog.imagen}
                         alt={blog.titulo}
                         className="img-fluid rounded"
                       />
