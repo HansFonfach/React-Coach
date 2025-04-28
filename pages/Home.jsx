@@ -8,7 +8,8 @@ import Footer from "../src/components/Footer";
 import Blog from "../src/components/Blog";
 import Expectatives from "../src/components/Expectatives";
 import Gallery from "../src/components/Gallery";
-import Experience from "../src/components/experience";
+import ProfessionalTraining from "../src/components/professionalTraining";
+
 
 const Home = () => {
   return (
@@ -23,7 +24,7 @@ const Home = () => {
       </div>
       <NavBar />
       <Hero />
-      <Experience />
+      <ProfessionalTraining/>
       <Services />
       <Expectatives />
       <Gallery />
