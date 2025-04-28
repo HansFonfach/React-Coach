@@ -97,7 +97,7 @@ const Hero = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12 mr-auto mb-5">
-              <h2 className="text-black mb-4">Bienvenido a mi sitio web</h2>
+              <h2 className="text-black mb-4">Bienvenido a mi sitio web2</h2>
               <p>
                 {" "}
                 Hola, soy <strong>Jaime Rojas Briceño.</strong> Durante gran
