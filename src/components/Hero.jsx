@@ -98,39 +98,53 @@ const Hero = () => {
           <div className="row">
             <div className="col-md-12 mr-auto mb-5">
               <h2 className="text-black mb-4">Bienvenido a mi sitio web</h2>
-              <p> Hola, soy Jaime Rojas Briceño. Durante gran parte de mi vida
-                profesional he trabajado en cargos directivos dentro del mundo
-                escolar, una experiencia que me ha permitido aprender, crecer y,
-                sobre todo, comprender la importancia del liderazgo en el día a
-                día.</p>
-               
-                <p> Hoy, desde mi experiencia como directivo, relator y coach
+              <p>
+                {" "}
+                Hola, soy <strong>Jaime Rojas Briceño.</strong> Durante gran
+                parte de mi vida profesional he trabajado en cargos directivos
+                dentro del mundo escolar, una experiencia que me ha permitido
+                aprender, crecer y, sobre todo, comprender la importancia del
+                liderazgo en el día a día.
+              </p>
+
+              <p>
+                {" "}
+                Hoy, desde mi experiencia como directivo, relator y coach
                 ejecutivo, acompaño a personas y equipos que desean fortalecer
                 sus habilidades de liderazgo y gestión. Mi enfoque es ayudarte a
                 alcanzar mejores resultados, no solo a través de herramientas
                 prácticas de gestión, sino también potenciando la manera en que
-                te conectas y te relacionas con los demás.</p>
-               
-                <p> Creo profundamente en
-                la importancia de integrar la experiencia con la teoría, y de
-                unir la práctica con espacios de reflexión que permitan un
-                aprendizaje más profundo y transformador.</p>
-               
-               <p> A través de este
-                enfoque, acompaño a directivos de manera individual y también a
-                equipos de trabajo que buscan crecer de forma sostenible y
-                consciente. </p>
-               
-               <p> El liderazgo mantiene su esencia más allá del rol o
-                el contexto en el que te toque ejercerlo, y esa convicción me ha
-                permitido apoyar tanto a directivos escolares como a líderes de
-                equipos en distintas áreas. </p>
-               
-                <p>Te invito a que te contactes
-                conmigo. Estaré feliz de acompañarte en tu posicionamiento y
-                desarrollo profesionalASDASD</p>
-                
-            
+                te conectas y te relacionas con los demás.
+              </p>
+
+              <p>
+                {" "}
+                Creo profundamente en la importancia de integrar la experiencia
+                con la teoría, y de unir la práctica con espacios de reflexión
+                que permitan un aprendizaje más profundo y transformador.
+              </p>
+
+              <p>
+                {" "}
+                A través de este enfoque, acompaño a directivos de manera
+                individual y también a equipos de trabajo que buscan crecer de
+                forma sostenible y consciente.{" "}
+              </p>
+
+              <p>
+                {" "}
+                El liderazgo mantiene su esencia más allá del rol o el contexto
+                en el que te toque ejercerlo, y esa convicción me ha permitido
+                apoyar tanto a directivos escolares como a líderes de equipos en
+                distintas áreas.{" "}
+              </p>
+
+              <strong>
+                <p>
+                  Te invito a que te contactes conmigo. Estaré feliz de
+                  acompañarte en tu posicionamiento y desarrollo profesiona.
+                </p>
+              </strong>
             </div>
           </div>
         </div>
