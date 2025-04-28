@@ -53,8 +53,8 @@ const Blog = () => {
                   <figure className="mr-4">
                     <a href={`/blogs/blog/${blog._id}`}>
                       <img
-                        src={blogs.image || "images/coach_1_sm.jpg"}
-                    
+                        src={blog.imagen || "images/coach_1_sm.jpg"}
+                        alt={blog.titulo}
                         className="img-fluid rounded"
                       />
                     </a>
