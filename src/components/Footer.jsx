@@ -6,8 +6,8 @@ function Footer() {
       <div className="container">
         <div className="row">
           <div className="col-md-4">
-            <h2 className="footer-heading mb-4">About Coaching</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem officiis dolorem assumenda alias mollitia reprehenderit dolor facilis.</p>
+            <h2 className="footer-heading mb-4">Sobre el coaching</h2>
+            <p>El coaching es un proceso de acompañamiento que impulsa el desarrollo personal y profesional, potenciando habilidades, liderazgo y toma de decisiones.</p>
           </div>
           <div className="col-md-3 ml-auto">
             <h2 className="footer-heading mb-4">Quick Links</h2>

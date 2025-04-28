@@ -7,6 +7,8 @@ import Contact from "../src/components/Contact";
 import Footer from "../src/components/Footer";
 import Blog from "../src/components/Blog";
 import Expectatives from "../src/components/Expectatives";
+import Experience from "../src/components/experience";
+import Gallery from "../src/components/Gallery";
 
 const Home = () => {
   return (
@@ -21,8 +23,10 @@ const Home = () => {
       </div>
       <NavBar />
       <Hero />
+      <Experience />
       <Services />
       <Expectatives />
+      <Gallery />
       <Books />
       <Blog />
       <Contact />

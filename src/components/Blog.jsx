@@ -31,7 +31,7 @@ const Blog = () => {
 
   return (
     <div>
-      <section className="site-section" id="blog-section">
+      <section className="site-section bg-light" id="blog-section">
         <div className="container">
           <div className="row justify-content-center" data-aos="fade-up">
             <div className="col-lg-6 text-center mb-5">
