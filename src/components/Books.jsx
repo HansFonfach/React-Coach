@@ -31,7 +31,7 @@ function Books() {
                 </p>
                 <strong>
                   <p>
-                    <Link to="/pdf/capitulo4.pdf">Ver Capítulo 4</Link>
+                    <Link to="/pdf/Capitulo4.pdf">Ver Capítulo 4</Link>
                     Leer capítulo 4
                   </p>
                   <p>
@@ -67,7 +67,7 @@ function Books() {
                   Práctica.
                 </p>
                 <p>
-                <a href="/docs/capitulo5.pdf" target="_blank" rel="noopener noreferrer">Ver Capítulo 5</a>
+                <a href="/docs/Capitulo5.pdf" target="_blank" rel="noopener noreferrer">Ver Capítulo 5</a>
                 </p>
                 <p>
                   <a
