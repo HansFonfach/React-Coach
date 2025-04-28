@@ -69,7 +69,7 @@ const Gallery = () => {
               },
               { src: "images/ULS.jpeg", title: "Universidad de La Serena" },
               {
-                src: "images/farmaceuticos",
+                src: "images/farmaceuticos.jpeg",
                 title: "Encuentro de Químicos Farmacéuticos/ Coquimbo",
               },
             ].map((item, index) => (
