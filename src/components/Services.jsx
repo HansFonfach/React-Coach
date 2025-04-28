@@ -48,8 +48,8 @@ function Services() {
               </div>
               <h3 class="text-black mb-3">COACHING DE EQUIPOS DIRECTIVOS</h3>
               <p>
-                Proceso que se focaliza en el esfuerzo de un equipo de
-                profesionales para alcanzar sus objetivos.
+                Proceso que se focaliza en la inteligencia colectiva y el
+                trabajo colaborativo para diseñar y lograr objetivos
               </p>
             </div>
           </div>
