@@ -8,7 +8,7 @@ import Footer from "../src/components/Footer";
 import Blog from "../src/components/Blog";
 import Expectatives from "../src/components/Expectatives";
 import Gallery from "../src/components/Gallery";
-import Experience from "../src/components/Experience";
+import Experience from "../src/components/experience";
 
 const Home = () => {
   return (
