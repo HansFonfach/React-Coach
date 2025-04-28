@@ -7,8 +7,8 @@ import Contact from "../src/components/Contact";
 import Footer from "../src/components/Footer";
 import Blog from "../src/components/Blog";
 import Expectatives from "../src/components/Expectatives";
-import Experience from "../src/components/experience";
 import Gallery from "../src/components/Gallery";
+import Experience from "../src/components/Experience";
 
 const Home = () => {
   return (

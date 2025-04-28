@@ -1,4 +1,4 @@
-export const Experience = () => {
+const Experience = () => {
   return (
     <section className="site-section bg-light" id="experience-section">
       <div className="container">
