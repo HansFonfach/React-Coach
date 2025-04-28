@@ -32,8 +32,7 @@ const BlogSidebar = () => (
       <h3>Acerca del autor</h3>
       <p>
         Jaime Rojas Briceño, coach ejecutivo y experto en liderazgo, comparte
-        reflexiones y herramientas para potenciar el desarrollo profesional y
-        personal.
+        reflexiones y herramientas para potenciar el desarrollo profesional.
       </p>
     </div>
   </div>
