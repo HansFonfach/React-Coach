@@ -67,7 +67,7 @@ function Books() {
                   Práctica.
                 </p>
                 <p>
-                <a href="../../public/docs/capitulo5.pdf" target="_blank" rel="noopener noreferrer">Ver Capítulo 5</a>
+                <a href="docs/capitulo5.pdf" target="_blank" rel="noopener noreferrer">Ver Capítulo 5</a>
                 </p>
                 <p>
                   <a
