@@ -40,7 +40,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/blogs/blog/:id" element={<Blogs />} />
-            <Route path="/view-pdf/:pdfName" element={<PdfViewer />} />
+            <Route path="/pdf/:pdfName" element={<PdfViewer />} />
 
             {/* RUTAS PRIVADAS */}
             <Route element={<ProtectedRoute />}>

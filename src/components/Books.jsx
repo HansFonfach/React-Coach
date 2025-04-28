@@ -31,12 +31,8 @@ function Books() {
                 </p>
                 <strong>
                   <p>
-                    <Link
-                      to="/view-pdf/capitulo4.pdf"
-                      className="text-danger"
-                    >
-                      Leer capítulo 4
-                    </Link>
+                    <Link to="/pdf/capitulo4.pdf">Ver Capítulo 4</Link>
+                    Leer capítulo 4
                   </p>
                   <p>
                     <a
@@ -70,25 +66,18 @@ function Books() {
                   trincheras idealizadas e integrando dos mundos: Teoría y
                   Práctica.
                 </p>
-                <strong>
-                  <p>
-                    <Link
-                      to="/view-pdf/capitulo5.pdf"
-                      className="text-danger"
-                    >
-                      Leer capítulo 5
-                    </Link>
-                  </p>
-                  <p>
-                    <a
-                      href="https://www.amazon.com/Jefatura-liderazgo-directivo-escolar-Spanish/dp/B0DSJ6LS42"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Compra aquí
-                    </a>
-                  </p>
-                </strong>
+                <p>
+                <a href="../../public/docs/capitulo5.pdf" target="_blank" rel="noopener noreferrer">Ver Capítulo 5</a>
+                </p>
+                <p>
+                  <a
+                    href="https://www.amazon.com/Jefatura-liderazgo-directivo-escolar-Spanish/dp/B0DSJ6LS42"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Compra aquí
+                  </a>
+                </p>
               </div>
             </div>
           </div>
