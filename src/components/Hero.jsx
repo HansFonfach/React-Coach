@@ -2,8 +2,7 @@ import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
 
 const Hero = () => {
-
-  const typedRef = useRef(null)
+  const typedRef = useRef(null);
   useEffect(() => {
     const $ = window.$;
 
@@ -28,7 +27,7 @@ const Hero = () => {
     const typed = new Typed(typedRef.current, {
       strings: [
         " RELATOR Y COACH EJECUTIVO",
-        " EXPERTO EN GESTIÓN Y LIDERAZGO DIRECTIVO"
+        " EXPERTO EN GESTIÓN Y LIDERAZGO DIRECTIVO",
       ],
       typeSpeed: 80,
       backSpeed: 80,
@@ -100,14 +99,27 @@ const Hero = () => {
             <div className="col-md-12 mr-auto mb-5">
               <h2 className="text-black mb-4">Bienvenido a mi sitio web</h2>
               <p>
-                Mi nombre es Jaime Rojas Briceño, docente que he ejercido la
-                mayor parte de mi carrera profesional asumiendo desafíos
-                directivos lo cual me ha llevado a mirar el funcionamiento
-                escolar más allá de lo que significa un proyecto educativo
-                institucional, sino más bien entendiendo este fenómeno desde el
-                desarrollo organizacional, razón por la cual he perfeccionado
-                mis habilidades directivas en el área de la dirección
-                estratégica de las organizaciones en general.
+                Hola, soy Jaime Rojas Briceño. Durante gran parte de mi vida
+                profesional he trabajado en cargos directivos dentro del mundo
+                escolar, una experiencia que me ha permitido aprender, crecer y,
+                sobre todo, comprender la importancia del liderazgo en el día a
+                día. Hoy, desde mi experiencia como directivo, relator y coach
+                ejecutivo, acompaño a personas y equipos que desean fortalecer
+                sus habilidades de liderazgo y gestión. Mi enfoque es ayudarte a
+                alcanzar mejores resultados, no solo a través de herramientas
+                prácticas de gestión, sino también potenciando la manera en que
+                te conectas y te relacionas con los demás. Creo profundamente en
+                la importancia de integrar la experiencia con la teoría, y de
+                unir la práctica con espacios de reflexión que permitan un
+                aprendizaje más profundo y transformador. A través de este
+                enfoque, acompaño a directivos de manera individual y también a
+                equipos de trabajo que buscan crecer de forma sostenible y
+                consciente. El liderazgo mantiene su esencia más allá del rol o
+                el contexto en el que te toque ejercerlo, y esa convicción me ha
+                permitido apoyar tanto a directivos escolares como a líderes de
+                equipos en distintas áreas. Te invito a que te contactes
+                conmigo. Estaré feliz de acompañarte en tu posicionamiento y
+                desarrollo profesional
               </p>
             </div>
           </div>
