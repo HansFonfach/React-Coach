@@ -7,7 +7,7 @@ const PdfViewer = () => {
   return (
     <div style={{ height: "100vh" }}>
       <iframe
-        src={`../../public/docs/${pdfName}`}
+        src={`/docs/${pdfName}`}
         width="100%"
         height="100%"
         style={{ border: "none" }}
