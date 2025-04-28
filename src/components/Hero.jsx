@@ -179,7 +179,7 @@ const Hero = () => {
                       className="text-warning mr-3"
                       style={{ fontSize: "1.5rem" }}
                     >
-                      🏅
+                     
                     </span>
                     <span>
                       Docente y Magíster en Gestión y Liderazgo Educacional, así
@@ -192,7 +192,7 @@ const Hero = () => {
                       className="text-warning mr-3"
                       style={{ fontSize: "1.5rem" }}
                     >
-                      🏅
+                    
                     </span>
                     <span>
                       Certificado como Coach Ejecutivo Profesional por la
@@ -204,7 +204,7 @@ const Hero = () => {
                       className="text-warning mr-3"
                       style={{ fontSize: "1.5rem" }}
                     >
-                      🏅
+                    
                     </span>
                     <span>
                       18 años de experiencia en cargos directivos en el ámbito
@@ -217,7 +217,7 @@ const Hero = () => {
                       className="text-warning mr-3"
                       style={{ fontSize: "1.5rem" }}
                     >
-                      🏅
+                     
                     </span>
                     <span>
                       Actualmente curso estudios de Psicología y me desempeño
