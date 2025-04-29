@@ -20,6 +20,10 @@ const Blog = () => {
     fetchBlogs();
   }, []);
 
+  console.log(blogs);
+  console.log(setBlogs);
+  console.log(currentBlogs);
+
   // Calcular blogs para la página actual
   const indexOfLastBlog = currentPage * blogsPerPage;
   const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
