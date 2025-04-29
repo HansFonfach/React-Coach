@@ -47,7 +47,7 @@ function NavBar() {
                 </li>
                 <li>
                   <a href="#blog-section" className="nav-link">
-                    Blogs
+                    Posts
                   </a>
                 </li>
                 <li>

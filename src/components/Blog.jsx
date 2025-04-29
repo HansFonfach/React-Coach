@@ -35,9 +35,9 @@ const Blog = () => {
         <div className="container">
           <div className="row justify-content-center" data-aos="fade-up">
             <div className="col-lg-6 text-center mb-5">
-              <h2 className="text-black mb-2">Mi blog</h2>
+              <h2 className="text-black mb-2">Mis Posts</h2>
               <p>
-                Conoce los distintos blogs que he escrito para ti.
+                Conoce los últimos post que he escrito para ti.
               </p>
             </div>
           </div>
