@@ -1,7 +1,11 @@
-import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import { comentBlogRequest, getPublicBlogRequest, answerBlog } from '../api/blogs';
-import Swal from 'sweetalert2';
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import {
+  comentBlogRequest,
+  getPublicBlogRequest,
+  answerBlog,
+} from "../api/blogs";
+import Swal from "sweetalert2";
 
 export const useBlogData = () => {
   const { id } = useParams();
@@ -15,9 +19,11 @@ export const useBlogData = () => {
     const fetchBlog = async () => {
       try {
         const res = await getPublicBlogRequest(id);
-        
+
         setBlog(res.data);
-        const comentariosValidos = res.data.comentarios.filter(c => c.nombre && c.mensaje);
+        const comentariosValidos = res.data.comentarios.filter(
+          (c) => c.nombre && c.mensaje
+        );
         setComentarios(comentariosValidos);
       } catch (error) {
         console.error("Error fetching blog:", error);
@@ -35,6 +41,15 @@ export const useBlogData = () => {
 
   // Handlers
   const handleCommentSubmit = async (data) => {
+    // Mostrar alerta de "enviando..."
+    let loadingAlert = Swal.fire({
+      title: "Publicando...",
+      text: "Por favor espera mientras se publica tu comentario",
+      allowOutsideClick: false,
+      didOpen: () => {
+        Swal.showLoading();
+      },
+    });
     try {
       const res = await comentBlogRequest(id, data);
       setComentarios([...comentarios, res.data]);
@@ -47,16 +62,20 @@ export const useBlogData = () => {
   const handleReplySubmit = async (data, comentarioId) => {
     try {
       const res = await answerBlog(id, comentarioId, { mensaje: data.mensaje });
-      const updatedComments = comentarios.map(c => 
-        c._id === comentarioId 
-          ? { ...c, respuestas: [...(c.respuestas || []), res.data] } 
+      const updatedComments = comentarios.map((c) =>
+        c._id === comentarioId
+          ? { ...c, respuestas: [...(c.respuestas || []), res.data] }
           : c
       );
       setComentarios(updatedComments);
       setReplyingTo(null);
       Swal.fire("¡Respuesta enviada!", "", "success");
     } catch (error) {
-      Swal.fire("Error", error.response?.data?.message || "Error al responder", "error");
+      Swal.fire(
+        "Error",
+        error.response?.data?.message || "Error al responder",
+        "error"
+      );
     }
   };
 
@@ -67,6 +86,6 @@ export const useBlogData = () => {
     replyingTo,
     setReplyingTo,
     handleCommentSubmit,
-    handleReplySubmit
+    handleReplySubmit,
   };
 };

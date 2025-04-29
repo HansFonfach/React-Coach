@@ -21,6 +21,16 @@ const BlogForm = () => {
   }, [register]);
 
   const onSubmit = handleSubmit(async (data) => {
+    // Mostrar alerta de "enviando..."
+    let loadingAlert = Swal.fire({
+      title: "Publicando...",
+      text: "Por favor espera mientras se publica tu post",
+      allowOutsideClick: false,
+      didOpen: () => {
+        Swal.showLoading();
+      },
+    });
+
     try {
       const formData = new FormData();
       formData.append("titulo", data.titulo);
