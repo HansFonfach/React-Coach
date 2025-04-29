@@ -12,17 +12,16 @@ function Footer() {
           <div className="col-md-3 ml-auto">
             <h2 className="footer-heading mb-4">Quick Links</h2>
             <ul className="list-unstyled">
-              <li><a href="#about-section" className="smoothscroll">About Us</a></li>
-              <li><a href="#training-section" className="smoothscroll">Our Training</a></li>
-              <li><a href="#services-section" className="smoothscroll">Services</a></li>
-              <li><a href="#testimonials-section" className="smoothscroll">Testimonials</a></li>
-              <li><a href="#contact-section" className="smoothscroll">Contact Us</a></li>
+              <li><a href="#about-section" className="smoothscroll">Acerca</a></li>
+              <li><a href="#training-section" className="smoothscroll">Coach</a></li>
+              <li><a href="#services-section" className="smoothscroll">Servicios</a></li>
+              <li><a href="#contact-section" className="smoothscroll">Contacto</a></li>
             </ul>
           </div>
           <div className="col-md-4">
             <div className="mb-5">
               <h2 className="footer-heading mb-4">Sigueme</h2>
-              <a href="#" className="pl-0 pr-3"><span className="icon-facebook"></span></a>
+            
               <a href="#" className="pl-3 pr-3"><span className="icon-instagram"></span></a>
               <a href="#" className="pl-3 pr-3"><span className="icon-whatsapp"></span></a>
             </div>

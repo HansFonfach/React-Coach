@@ -21,6 +21,7 @@ import "./styles/owl.theme.default.min.css";
 import "./styles/aos.css";
 import "../public/fonts/flaticon/font/flaticon.css";
 import "./styles/style.css";
+import AboutPage from "../pages/AboutPage";
 
 
 
@@ -41,6 +42,7 @@ function App() {
             <Route path="/login" element={<LoginPage />} />
             <Route path="/blogs/blog/:id" element={<Blogs />} />
             <Route path="/pdf/:pdfName" element={<PdfViewer />} />
+            <Route path="/about" element={<AboutPage />} />
 
             {/* RUTAS PRIVADAS */}
             <Route element={<ProtectedRoute />}>

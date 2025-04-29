@@ -22,7 +22,7 @@ const Home = () => {
         </div>
         <div className="site-mobile-menu-body"></div>
       </div>
-      <NavBar />
+      <NavBar variant="primary" />
       <Hero />
       <Services />
       <Expectatives />
