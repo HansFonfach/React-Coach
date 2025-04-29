@@ -81,7 +81,7 @@ function Contact() {
           <div className="mb-4 mb-lg-0 col-md-6 col-lg-4">
             <p className="mb-0 font-weight-bold text-primary">Correo</p>
             <p className="mb-0">
-              <a href="#">jaimerojasb@gmail.com</a>
+              <a href="#">jaimearojasb@gmail.com</a>
             </p>
           </div>
         </div>
