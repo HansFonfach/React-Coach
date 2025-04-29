@@ -24,9 +24,17 @@ const Blog = () => {
 
   if (!blog) {
     return (
-      <div className="flex flex-col items-center justify-center h-screen">
-        <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500 border-solid mb-4"></div>
-        <p className="text-lg font-medium">Cargando...</p>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+          fontSize: "1.5rem",
+          fontWeight: "bold",
+        }}
+      >
+        Cargando...
       </div>
     );
   }
