@@ -40,11 +40,13 @@ const BlogForm = () => {
       await createBlog(formData); // Enviamos el FormData
 
       Swal.fire({
-        title: "¡Blog creado!",
-        text: "Tu blog se ha publicado correctamente",
+        title: "¡Postcreado!",
+        text: "Tu post se ha publicado correctamente",
         icon: "success",
         confirmButtonText: "Aceptar",
       });
+
+      
     } catch (error) {
       console.error("Error:", error);
     }

@@ -22,7 +22,13 @@ const Blog = () => {
 
   const { register, handleSubmit } = useForm();
 
-  if (!blog) return <p>Cargando...</p>;
+  if (!blog) {
+    return (
+      <div className="flex items-center justify-center h-screen text-xl font-semibold">
+        Cargando...
+      </div>
+    );
+  }
   
 
   return (
