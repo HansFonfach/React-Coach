@@ -37,7 +37,7 @@ const Blog = () => {
             <div className="col-lg-6 text-center mb-5">
               <h2 className="text-black mb-2">Mis Posts</h2>
               <p>
-                Conoce los últimos post que he escrito para ti.
+                Conoce los últimos posts que he escrito para ti.
               </p>
             </div>
           </div>
