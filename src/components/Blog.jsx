@@ -20,7 +20,9 @@ const Blog = () => {
     fetchBlogs();
   }, []);
 
-  console.log(blogs.imagen);
+  console.log(blogs);
+  
+  console.log(blogs.data);
 
  
 
