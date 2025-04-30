@@ -8,9 +8,7 @@ import Footer from "../src/components/Footer";
 import Blog from "../src/components/Blog";
 import Expectatives from "../src/components/Expectatives";
 import Gallery from "../src/components/Gallery";
-import Videos from "../src/components/videos";
-
-
+import VideosGallery from "../src/components/VideosGallery";
 
 const Home = () => {
   return (
@@ -30,7 +28,7 @@ const Home = () => {
       <Gallery />
       <Books />
       <Blog />
-      <Videos/>
+      <VideosGallery />
       <Contact />
       <Footer />
     </div>

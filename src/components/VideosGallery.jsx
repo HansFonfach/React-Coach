@@ -1,8 +1,8 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import Instagram from "./Instagram";
 
-function Videos() {
+
+function VideosGallery() {
   const videoList = [
     // YouTube (ReactPlayer)
     {
@@ -81,4 +81,4 @@ function Videos() {
   );
 }
 
-export default Videos;
+export default VideosGallery;
