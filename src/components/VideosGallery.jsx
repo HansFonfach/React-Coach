@@ -1,10 +1,10 @@
+// VideosGallery.js
 import React from "react";
 import ReactPlayer from "react-player";
-
+import Instagram from "./Instagram";
 
 function VideosGallery() {
   const videoList = [
-    // YouTube (ReactPlayer)
     {
       url: "https://www.youtube.com/watch?v=XFvns69GclA",
       title: "Entrevista: Jaime - Coach Ejecutivo Profesional",
@@ -15,19 +15,7 @@ function VideosGallery() {
       title: "Presentación: Fundación Bienestar",
       type: "youtube",
     },
-    // Shorts de YouTube (iframe)
-    {
-      url: "https://www.instagram.com/reel/C-p9ESIOXak/?igsh=MXR5dGtyYTN2bnR0MQ%3D%3D",
-      title: "Reel: Herramientas de Coaching",
-      type: "iframe",
-    },
  
-    // Instagram Reel (iframe)
-    {
-      url: "https://www.instagram.com/reel/DGMRk7sxaRL/?igsh=Y3k2c3dpaTd2M3Fw",
-      title: "Reel: Herramientas de Coaching",
-      type: "iframe",
-    },
   ];
 
   return (
@@ -58,24 +46,16 @@ function VideosGallery() {
                     height="200px"
                     style={{ borderRadius: "8px" }}
                   />
-                ) : (
-                  <iframe
-                    src={video.url}
-                    width="100%"
-                    height="200"
-                    title={video.title}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                    style={{ borderRadius: "8px" }}
-                  ></iframe>
-                )}
+                ) : video.type === "instagram" ? (
+                  <div style={{ height: "auto", overflow: "hidden" }}>
+                    <Instagram urls={[video.url]} />
+                  </div>
+                ) : null}
                 <h5 className="mt-3">{video.title}</h5>
               </div>
             </div>
           ))}
         </div>
-       
       </div>
     </section>
   );
