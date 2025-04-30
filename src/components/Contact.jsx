@@ -137,7 +137,7 @@ function Contact() {
                     type="submit"
                     className="btn btn-block btn-primary text-white py-2 px-5"
                   >
-                    Enviar formulario
+                    Enviar correo
                   </button>
                 </div>
               </div>

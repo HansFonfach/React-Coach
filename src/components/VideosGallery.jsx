@@ -15,7 +15,16 @@ function VideosGallery() {
       title: "Presentación: Fundación Bienestar",
       type: "youtube",
     },
- 
+    {
+      url: "https://youtu.be/0unYcdyqs4k",
+      title: "Aprendizaje para la mejora continua",
+      type: "youtube",
+    },
+    {
+      url: "https://youtu.be/aVmUnVxxGRk",
+      title: "De jefe a líder",
+      type: "youtube",
+    },
   ];
 
   return (
@@ -24,7 +33,7 @@ function VideosGallery() {
         <div className="row justify-content-center" data-aos="fade-up">
           <div className="col-lg-6 text-center mb-5">
             <h2 className="text-white mb-2">Entrevistas y Presentaciones</h2>
-            <p>
+            <p className="text-white">
               Explora videos destacados sobre liderazgo, coaching y educación.
             </p>
           </div>
