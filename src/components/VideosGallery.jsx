@@ -31,11 +31,11 @@ function VideosGallery() {
   ];
 
   return (
-    <section className="site-section " id="videos-section">
+    <section className="site-section bg-primary" id="videos-section">
       <div className="container">
         <div className="row justify-content-center" data-aos="fade-up">
           <div className="col-lg-6 text-center mb-5">
-            <h2 className="text-black mb-2">Entrevistas y Presentaciones</h2>
+            <h2 className="text-white mb-2">Entrevistas y Presentaciones</h2>
             <p>
               Explora videos destacados sobre liderazgo, coaching y educación.
             </p>
