@@ -10,6 +10,7 @@ import BlogList from "../pages/BlogList";
 import MenuBlog from "../pages/MenuBlog";
 import Blogs from "../pages/Blogs";
 import PdfViewer from "./components/pdfViewer";
+import { Analytics } from "@vercel/analytics/react"
 
 // Importación de estilos (el orden se mantiene igual)
 import "./styles/bootstrap.min.css";
