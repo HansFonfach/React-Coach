@@ -7,22 +7,22 @@ function VideosGallery() {
   const videoList = [
     {
       url: "https://www.youtube.com/watch?v=XFvns69GclA",
-      title: "Entrevista: Jaime - Coach Ejecutivo Profesional",
+      title: "Presentación libro.",
       type: "youtube",
     },
     {
       url: "https://www.youtube.com/watch?v=SrDM0OnpwoM",
-      title: "Presentación: Fundación Bienestar",
+      title: "Entrevista: Fundación Bien.",
       type: "youtube",
     },
     {
       url: "https://youtu.be/0unYcdyqs4k",
-      title: "Aprendizaje para la mejora continua",
+      title: "Aprendizaje para la mejora continua.",
       type: "youtube",
     },
     {
       url: "https://youtu.be/aVmUnVxxGRk",
-      title: "De jefe a líder",
+      title: "Entrevista : De jefe a líder.",
       type: "youtube",
     },
   ];
@@ -32,7 +32,7 @@ function VideosGallery() {
       <div className="container">
         <div className="row justify-content-center" data-aos="fade-up">
           <div className="col-lg-6 text-center mb-5">
-            <h2 className="text-white mb-2">Entrevistas y Presentaciones</h2>
+            <h2 className="text-white mb-2">Algunas entrevistas y presentaciones</h2>
             <p className="text-white">
               Explora videos destacados sobre liderazgo, coaching y educación.
             </p>
