@@ -10,7 +10,7 @@ import BlogList from "../pages/BlogList";
 import MenuBlog from "../pages/MenuBlog";
 import Blogs from "../pages/Blogs";
 import PdfViewer from "./components/pdfViewer";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 
 // Importación de estilos (el orden se mantiene igual)
 import "./styles/bootstrap.min.css";
@@ -23,8 +23,6 @@ import "./styles/aos.css";
 import "../public/fonts/flaticon/font/flaticon.css";
 import "./styles/style.css";
 import AboutPage from "../pages/AboutPage";
-
-
 
 // Componente wrapper para inyectar la ubicación al AuthProvider
 const AuthProviderWrapper = ({ children }) => {
@@ -44,7 +42,7 @@ function App() {
             <Route path="/blogs/blog/:id" element={<Blogs />} />
             <Route path="/pdf/:pdfName" element={<PdfViewer />} />
             <Route path="/about" element={<AboutPage />} />
-
+            <Analytics />
             {/* RUTAS PRIVADAS */}
             <Route element={<ProtectedRoute />}>
               <Route path="/blog" element={<MenuBlog />} />
