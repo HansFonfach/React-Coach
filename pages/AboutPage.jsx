@@ -71,13 +71,19 @@ const aboutPage = () => {
                 </div>
 
                 <h4 className="text-primary mb-4">
-                  Experiencia y Formación Profesional
+                  Experiencia y Formación Profesional.
                 </h4>
                 <ul className="list-unstyled text-justify">
                   <li className="mb-3 d-flex align-items-start">
+                    <span>• Docente.</span>
+                  </li>
+                  <li className="mb-3 d-flex align-items-start">
+                    <span>• Magíster en Gestión y Liderazgo Educacional.</span>
+                  </li>
+
+                  <li className="mb-3 d-flex align-items-start">
                     <span>
-                      • Docente y Magíster en Gestión y Liderazgo Educacional,
-                      así como en Liderazgo, Dirección Estratégica y
+                      • Magíster en Liderazgo, Dirección Estratégica y
                       Comunicación Organizacional.
                     </span>
                   </li>
