@@ -78,7 +78,7 @@ const Blog = () => {
                   {comentarios.map((comentario) => (
                     <BlogComment
                       key={comentario._id}
-                      comentario={comentario}
+                      comentario={comentario.mensaje}
                       isAdmin={isAdmin}
                       isReplying={replyingTo === comentario._id}
                       onToggleReply={() =>
