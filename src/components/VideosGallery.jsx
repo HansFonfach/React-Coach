@@ -1,9 +1,11 @@
-// VideosGallery.js
-import React from "react";
+import React, { useState } from "react";
 import ReactPlayer from "react-player";
 import Instagram from "./Instagram";
 
 function VideosGallery() {
+  const videosPerPage = 4;
+  const [currentPage, setCurrentPage] = useState(1);
+
   const videoList = [
     {
       url: "https://www.youtube.com/watch?v=XFvns69GclA",
@@ -25,21 +27,44 @@ function VideosGallery() {
       title: "Entrevista : De jefe a líder.",
       type: "youtube",
     },
+    {
+      url: "https://youtu.be/U4RPjuEUH6o",
+      title: "En mi colegio",
+      type: "youtube",
+    },
+    // Puedes agregar más videos aquí
   ];
+
+  const totalPages = Math.ceil(videoList.length / videosPerPage);
+
+  const indexOfLastVideo = currentPage * videosPerPage;
+  const indexOfFirstVideo = indexOfLastVideo - videosPerPage;
+  const currentVideos = videoList.slice(indexOfFirstVideo, indexOfLastVideo);
+
+  const goToNextPage = () => {
+    if (currentPage < totalPages) setCurrentPage(currentPage + 1);
+  };
+
+  const goToPrevPage = () => {
+    if (currentPage > 1) setCurrentPage(currentPage - 1);
+  };
 
   return (
     <section className="site-section bg-primary" id="videos-section">
       <div className="container">
         <div className="row justify-content-center" data-aos="fade-up">
           <div className="col-lg-6 text-center mb-5">
-            <h2 className="text-white mb-2">Algunas entrevistas y presentaciones</h2>
+            <h2 className="text-white mb-2">
+              Algunas entrevistas y presentaciones
+            </h2>
             <p className="text-white">
               Explora videos destacados sobre liderazgo, coaching y educación.
             </p>
           </div>
         </div>
+
         <div className="row">
-          {videoList.map((video, index) => (
+          {currentVideos.map((video, index) => (
             <div
               key={index}
               className="col-md-6 mb-4"
@@ -64,6 +89,27 @@ function VideosGallery() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Paginación */}
+        <div className="text-center mt-4">
+          <button
+            onClick={goToPrevPage}
+            disabled={currentPage === 1}
+            className="btn btn-light me-2"
+          >
+            Anterior
+          </button>
+          <span className="text-white">
+            {currentPage} / {totalPages}
+          </span>
+          <button
+            onClick={goToNextPage}
+            disabled={currentPage === totalPages}
+            className="btn btn-light ms-2"
+          >
+            Siguiente
+          </button>
         </div>
       </div>
     </section>
