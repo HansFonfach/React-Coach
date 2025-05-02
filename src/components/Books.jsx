@@ -32,7 +32,7 @@ function Books() {
                 <strong>
                   <p className="text-danger">
                     <a
-                      href="/docs/Capitulo4.pdf"
+                      href="/docs/Capitulo5.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -74,7 +74,7 @@ function Books() {
                 <strong>
                   <p className="text-danger">
                     <a
-                      href="/docs/Capitulo5.pdf"
+                      href="/docs/Capitulo4.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
