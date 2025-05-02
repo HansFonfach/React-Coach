@@ -95,7 +95,7 @@ const aboutPage = () => {
                   </li>
                   <li className="mb-3 d-flex align-items-start">
                     <span>
-                      • 18 años de experiencia en cargos directivos y basta experiencia como relator y coach ejecutivo.
+                      • 18 años de experiencia en cargos directivos y basta experiencia como relator y Coach Ejecutivo.
                     </span>
                   </li>
                   <li className="mb-3 d-flex align-items-start">
