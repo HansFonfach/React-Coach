@@ -5,6 +5,7 @@ import {
   getPublicBlogRequest,
   answerBlog,
 } from "../api/blogs";
+
 import Swal from "sweetalert2";
 
 export const useBlogData = () => {
@@ -54,6 +55,8 @@ export const useBlogData = () => {
       const res = await comentBlogRequest(id, data);
       setComentarios([...comentarios, res.data]);
       Swal.fire("¡Comentario publicado!", "", "success");
+      window.location.reload();
+
     } catch (error) {
       Swal.fire("Error", "No se pudo enviar el comentario", "error");
     }
