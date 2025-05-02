@@ -36,7 +36,7 @@ function Books() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Ver Capítulo 4
+                      Ver Capítulo 5
                     </a>
                   </p>
                   <p>
@@ -78,7 +78,7 @@ function Books() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Ver Capítulo 5
+                      Ver Capítulo 4
                     </a>
                   </p>
                   <p>
