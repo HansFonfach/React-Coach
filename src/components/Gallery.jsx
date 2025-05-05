@@ -82,6 +82,11 @@ const Gallery = () => {
       src: "images/farmaceuticos.jpeg",
       title: "Encuentro de Químicos Farmacéuticos/ Coquimbo",
     },
+    {
+      src: "images/Kid’s World School - Coquimbo.mp4",
+      title: "Kid’s World School - Coquimbo",
+      type: "video",
+    },
   ];
 
   return (
@@ -106,18 +111,36 @@ const Gallery = () => {
                   className="mb-4 img-hover-zoom"
                   style={{ overflow: "hidden", borderRadius: "12px" }}
                 >
-                  <img
-                    src={item.src}
-                    alt={item.title}
-                    className="img-fluid"
-                    style={{
-                      width: "100%",
-                      height: "250px",
-                      objectFit: "cover",
-                      transition: "transform 0.5s ease",
-                    }}
-                  />
+                  {item.type === "video" ? (
+                    <video
+                      loop
+                      autoPlay
+                      muted
+                      className="img-fluid"
+                      style={{
+                        width: "100%",
+                        height: "250px",
+                        objectFit: "cover",
+                      }}
+                    >
+                      <source src={item.src} type="video/mp4" />
+                      Tu navegador no soporta videos.
+                    </video>
+                  ) : (
+                    <img
+                      src={item.src}
+                      alt={item.title}
+                      className="img-fluid"
+                      style={{
+                        width: "100%",
+                        height: "250px",
+                        objectFit: "cover",
+                        transition: "transform 0.5s ease",
+                      }}
+                    />
+                  )}
                 </figure>
+
                 <h5 className="text-black mb-2">{item.title}</h5>
               </div>
             </div>
