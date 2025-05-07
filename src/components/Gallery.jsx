@@ -144,7 +144,7 @@ const Gallery = () => {
                 <h5 className="text-black mb-2">{item.title}</h5>
               </div>
             </div>
-          ))}
+          ))}   
         </Slider>
       </div>
 

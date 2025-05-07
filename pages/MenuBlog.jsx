@@ -1,5 +1,5 @@
 import React from "react";
-import avatarImage from "../public/images/autor2.jpeg";
+import avatarImage from "../public/images/perfil.jpg";
 
 const AdminMenu = () => {
   return (
