@@ -11,6 +11,7 @@ const aboutPage = () => {
   }, []);
 
   const experienciaYFormacion = [
+    "Docente",
     "Postitulado en Liderazgo Educacional",
     "Diplomado en Dirección Estratégica",
     "Magíster en Gestión y Liderazgo Educacional",
