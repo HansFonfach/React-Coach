@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Books() {
-  const phoneNumber = "56994455778";
+  const phoneNumber = "56994455 778";
   const message = "Hola, estoy interesado en comprar tu libro";
 
   const handleClick = () => {
@@ -50,7 +50,13 @@ function Books() {
                     </a>
                   </p>
                   <p>
-                    <a onClick={handleClick}>Compra aquí</a>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={handleClick}
+                    >
+                      Compra aquí
+                    </a>
                   </p>
                 </strong>
               </div>
@@ -86,7 +92,13 @@ function Books() {
                     </a>
                   </p>
                   <p>
-                    <a onClick={handleClick}>Compra aquí</a>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={handleClick}
+                    >
+                      Compra aquí
+                    </a>
                   </p>
                 </strong>
               </div>
