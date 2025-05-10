@@ -2,6 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Books() {
+  const phoneNumber = "56994455 778";
+  const message = "Hola, estoy interesado en comprar tu libro";
+
+  const handleClick = () => {
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(url, "_blank"); // Abre en una nueva pestaña
+  };
+
   return (
     <section className="site-section" id="books-section">
       <div className="container">
@@ -40,13 +50,7 @@ function Books() {
                     </a>
                   </p>
                   <p>
-                    <a
-                      href="https://www.amazon.com/-/es/Me-nombraron-directivo-escolar-aprender/dp/B0CPLF9K6V"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Compra aquí
-                    </a>
+                    <a onClick={handleClick}>Compra aquí</a>
                   </p>
                 </strong>
               </div>
@@ -82,13 +86,7 @@ function Books() {
                     </a>
                   </p>
                   <p>
-                    <a
-                      href="https://www.amazon.com/Jefatura-liderazgo-directivo-escolar-Spanish/dp/B0DSJ6LS42"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Compra aquí
-                    </a>
+                    <a onClick={handleClick}>Compra aquí</a>
                   </p>
                 </strong>
               </div>
