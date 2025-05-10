@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Books() {
   const phoneNumber = "56994455 778";
-  const message = "Hola, estoy interesado en comprar tu libro";
+  const message = "Hola Jaime. Estoy interesado en adquirir su libro. ¿Podría brindarme más información, por favor?";
 
   const handleClick = () => {
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
@@ -50,11 +50,7 @@ function Books() {
                     </a>
                   </p>
                   <p>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={handleClick}
-                    >
+                    <a className="text-danger" onClick={handleClick}>
                       Compra aquí
                     </a>
                   </p>
@@ -92,11 +88,7 @@ function Books() {
                     </a>
                   </p>
                   <p>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={handleClick}
-                    >
+                    <a className="text-danger" onClick={handleClick}>
                       Compra aquí
                     </a>
                   </p>
