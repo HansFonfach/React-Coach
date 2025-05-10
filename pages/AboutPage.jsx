@@ -10,6 +10,19 @@ const aboutPage = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const experienciaYFormacion = [
+    "Postitulado en Liderazgo Educacional",
+    "Diplomado en Dirección Estratégica",
+    "Magíster en Gestión y Liderazgo Educacional",
+    "Magíster en Dirección Estratégica, Liderazgo y Comunicación Organizacional",
+    "Diplomado en Coaching Ejecutivo",
+    "Coach Ejecutivo Profesional certificado por la Pontificia Universidad Católica de Chile",
+    "Certificado Hogan Assessment",
+    "Certificado en Cultura Organizacional Denison",
+    "18 años en cargos directivos escolares",
+    "Basta experiencia en relatoría y Coaching Ejecutivo",
+  ];
+
   return (
     <>
       <section
@@ -74,39 +87,12 @@ const aboutPage = () => {
                   Experiencia y Formación Profesional.
                 </h4>
                 <ul className="list-unstyled text-justify">
-                  <li className="mb-3 d-flex align-items-start">
-                    <span>• Docente.</span>
-                  </li>
-                  <li className="mb-3 d-flex align-items-start">
-                    <span>• Magíster en Gestión y Liderazgo Educacional.</span>
-                  </li>
-
-                  <li className="mb-3 d-flex align-items-start">
-                    <span>
-                      • Magíster en Liderazgo, Dirección Estratégica y
-                      Comunicación Organizacional.
-                    </span>
-                  </li>
-                  <li className="mb-3 d-flex align-items-start">
-                    <span>
-                      • Coach Ejecutivo Profesional certificado por la
-                      Pontificia Universidad Católica de Chile.
-                    </span>
-                  </li>
-                  <li className="mb-3 d-flex align-items-start">
-                    <span>
-                      • 18 años de experiencia en cargos directivos y basta
-                      experiencia como relator y Coach Ejecutivo.
-                    </span>
-                  </li>
-                  <li className="mb-3 d-flex align-items-start">
-                    <span>
-                      • Actualmente Rector de una institución educativa de más
-                      de 1.700 estudiantes y 198 colaboradores.
-                    </span>
-                  </li>
+                  {experienciaYFormacion.map((item, index) => (
+                    <li key={index} className="mb-3 d-flex align-items-start">
+                      <span>• {item}</span>
+                    </li>
+                  ))}
                 </ul>
-
                 <div className="text-center mt-5">
                   <a
                     href="/"
