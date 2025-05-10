@@ -11,17 +11,19 @@ const aboutPage = () => {
   }, []);
 
   const experienciaYFormacion = [
-    "Docente",
-    "Postitulado en Liderazgo Educacional",
-    "Diplomado en Dirección Estratégica",
-    "Magíster en Gestión y Liderazgo Educacional",
-    "Magíster en Dirección Estratégica, Liderazgo y Comunicación Organizacional",
-    "Diplomado en Coaching Ejecutivo",
-    "Coach Ejecutivo Profesional certificado por la Pontificia Universidad Católica de Chile",
-    "Certificado Hogan Assessment",
-    "Certificado en Cultura Organizacional Denison",
-    "18 años en cargos directivos escolares",
-    "Basta experiencia en relatoría y Coaching Ejecutivo",
+    "Docente.",
+    "Postitulado en Liderazgo Educacional.",
+    "Diplomado en Dirección Estratégica.",
+    "Magíster en Gestión y Liderazgo Educacional.",
+    "Magíster en Dirección Estratégica, Liderazgo y Comunicación Organizacional.",
+    "Diplomado en Coaching Ejecutivo.",
+    "Coach Ejecutivo Profesional certificado por la Pontificia Universidad Católica de Chile.",
+    "Certificado Hogan Assessment.",
+    "Certificado en Cultura Organizacional Denison.",
+    "18 años en cargos directivos escolares.",
+    "Basta experiencia en relatoría y Coaching Ejecutivo.",
+    "Actualmente Rector de una institución educativa de más  de 1.700 estudiantes y 198 colaboradores."
+                    
   ];
 
   return (
