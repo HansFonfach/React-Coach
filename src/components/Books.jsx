@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Books() {
-  const phoneNumber = "56994455 778";
+  const phoneNumber = "56994455778";
   const message = "Hola Jaime. Estoy interesado en adquirir su libro. ¿Podría brindarme más información, por favor?";
 
   const handleClick = () => {
