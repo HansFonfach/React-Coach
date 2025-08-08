@@ -87,6 +87,10 @@ const Gallery = () => {
       title: "Kid’s World School - Coquimbo",
       type: "video",
     },
+    {
+      src: "images/HOMECENTER OVALLE.jpeg",
+      title: "Homecenter Ovalle",
+    },
   ];
 
   return (
