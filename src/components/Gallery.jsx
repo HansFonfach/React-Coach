@@ -91,6 +91,7 @@ const Gallery = () => {
       src: "images/HOMECENTER OVALLE.jpeg",
       title: "Homecenter Ovalle",
     },
+    
   ];
 
   return (
