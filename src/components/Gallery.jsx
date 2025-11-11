@@ -91,7 +91,10 @@ const Gallery = () => {
       src: "images/HOMECENTER OVALLE.jpeg",
       title: "Homecenter Ovalle",
     },
-    
+     {
+      src: "images/CSJB.jpeg",
+      title: "Equipo de gestión del Colegio San Juan Bautista de Ovalle",
+    },    
   ];
 
   return (
